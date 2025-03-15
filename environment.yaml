@@ -1,0 +1,18 @@
+name: cs229-dota
+channels:
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+dependencies:
+  - boto3[version='>=1.26.0']
+  - botocore[version='>=1.29.0']
+  - python=3.10
+  - typing-extensions[version='>=4.0.0']
+  - ijson[version='>=3.2.0']
+  - requests[version='>=2.31.0']
+  - urllib3[version='>=2.0.0']
+  - numpy
+  - pandas
+  - scikit-learn
+  - pytorch
+  - matplotlib
+prefix: /home/ec2-user/anaconda3/envs/cs229-dota

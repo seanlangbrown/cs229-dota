@@ -1,0 +1,2841 @@
+{
+  "type": "object",
+  "properties": {
+    "match_id": {
+      "type": "integer"
+    },
+    "match_seq_num": {
+      "type": "integer"
+    },
+    "radiant_win": {
+      "type": "boolean"
+    },
+    "start_time": {
+      "type": "integer"
+    },
+    "duration": {
+      "type": "integer"
+    },
+    "tower_status_radiant": {
+      "type": "integer"
+    },
+    "tower_status_dire": {
+      "type": "integer"
+    },
+    "barracks_status_radiant": {
+      "type": "integer"
+    },
+    "barracks_status_dire": {
+      "type": "integer"
+    },
+    "cluster": {
+      "type": "integer"
+    },
+    "first_blood_time": {
+      "type": "integer"
+    },
+    "lobby_type": {
+      "type": "integer"
+    },
+    "human_players": {
+      "type": "integer"
+    },
+    "leagueid": {
+      "type": "integer"
+    },
+    "positive_votes": {
+      "type": "integer"
+    },
+    "negative_votes": {
+      "type": "integer"
+    },
+    "game_mode": {
+      "type": "integer"
+    },
+    "engine": {
+      "type": "mixed"
+    },
+    "picks_bans": {
+      "type": "mixed",
+      "items": {
+        "type": "mixed",
+        "properties": {
+          "is_pick": {
+            "type": "boolean"
+          },
+          "hero_id": {
+            "type": "integer"
+          },
+          "team": {
+            "type": "integer"
+          },
+          "order": {
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "parse_status": {
+      "type": "integer"
+    },
+    "chat": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "prefix": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          },
+          "time": {
+            "type": "integer"
+          },
+          "slot": {
+            "type": "integer"
+          },
+          "key": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "objectives": {
+      "type": "mixed",
+      "items": {
+        "type": "mixed",
+        "properties": {
+          "time": {
+            "type": "integer"
+          },
+          "type": {
+            "type": "string"
+          },
+          "subtype": {
+            "type": "string"
+          },
+          "value": {
+            "type": "integer"
+          },
+          "player1": {
+            "type": "integer"
+          },
+          "player2": {
+            "type": "integer"
+          },
+          "slot": {
+            "type": "integer"
+          },
+          "team": {
+            "type": "integer"
+          },
+          "key": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "radiant_gold_adv": {
+      "type": "mixed",
+      "items": {
+        "type": "integer"
+      }
+    },
+    "radiant_xp_adv": {
+      "type": "mixed",
+      "items": {
+        "type": "integer"
+      }
+    },
+    "teamfights": {
+      "type": "mixed"
+    },
+    "version": {
+      "type": "integer"
+    },
+    "players": {
+      "type": "array",
+      "items": {
+        "type": "mixed",
+        "properties": {
+          "account_id": {
+            "type": "integer"
+          },
+          "player_slot": {
+            "type": "integer"
+          },
+          "hero_id": {
+            "type": "integer"
+          },
+          "item_0": {
+            "type": "integer"
+          },
+          "item_1": {
+            "type": "integer"
+          },
+          "item_2": {
+            "type": "integer"
+          },
+          "item_3": {
+            "type": "integer"
+          },
+          "item_4": {
+            "type": "integer"
+          },
+          "item_5": {
+            "type": "integer"
+          },
+          "kills": {
+            "type": "integer"
+          },
+          "deaths": {
+            "type": "integer"
+          },
+          "assists": {
+            "type": "integer"
+          },
+          "leaver_status": {
+            "type": "integer"
+          },
+          "gold": {
+            "type": "integer"
+          },
+          "last_hits": {
+            "type": "integer"
+          },
+          "denies": {
+            "type": "integer"
+          },
+          "gold_per_min": {
+            "type": "integer"
+          },
+          "xp_per_min": {
+            "type": "integer"
+          },
+          "gold_spent": {
+            "type": "integer"
+          },
+          "hero_damage": {
+            "type": "integer"
+          },
+          "tower_damage": {
+            "type": "integer"
+          },
+          "hero_healing": {
+            "type": "integer"
+          },
+          "level": {
+            "type": "integer"
+          },
+          "ability_upgrades": {
+            "type": "array",
+            "items": {
+              "type": "mixed",
+              "properties": {
+                "ability": {
+                  "type": "integer"
+                },
+                "time": {
+                  "type": "integer"
+                },
+                "level": {
+                  "type": "integer"
+                }
+              }
+            }
+          },
+          "additional_units": {
+            "type": "mixed",
+            "items": {
+              "type": "object",
+              "properties": {
+                "unitname": {
+                  "type": "string"
+                },
+                "item_0": {
+                  "type": "integer"
+                },
+                "item_1": {
+                  "type": "integer"
+                },
+                "item_2": {
+                  "type": "integer"
+                },
+                "item_3": {
+                  "type": "integer"
+                },
+                "item_4": {
+                  "type": "integer"
+                },
+                "item_5": {
+                  "type": "integer"
+                }
+              }
+            }
+          },
+          "stuns": {
+            "type": "mixed"
+          },
+          "max_hero_hit": {
+            "type": "mixed",
+            "properties": {
+              "value": {
+                "type": "integer"
+              }
+            }
+          },
+          "times": {
+            "type": "mixed",
+            "items": {
+              "type": "integer"
+            }
+          },
+          "gold_t": {
+            "type": "mixed",
+            "items": {
+              "type": "integer"
+            }
+          },
+          "lh_t": {
+            "type": "mixed",
+            "items": {
+              "type": "integer"
+            }
+          },
+          "xp_t": {
+            "type": "mixed",
+            "items": {
+              "type": "integer"
+            }
+          },
+          "obs_log": {
+            "type": "mixed"
+          },
+          "sen_log": {
+            "type": "mixed"
+          },
+          "purchase_log": {
+            "type": "mixed",
+            "items": {
+              "type": "object",
+              "properties": {
+                "time": {
+                  "type": "integer"
+                },
+                "key": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "kills_log": {
+            "type": "mixed",
+            "items": {
+              "type": "object",
+              "properties": {
+                "time": {
+                  "type": "integer"
+                },
+                "key": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "buyback_log": {
+            "type": "mixed",
+            "items": {
+              "type": "object",
+              "properties": {
+                "time": {
+                  "type": "integer"
+                },
+                "key": {
+                  "type": "string"
+                },
+                "slot": {
+                  "type": "mixed"
+                },
+                "type": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "lane_pos": {
+            "type": "mixed",
+            "properties": {}
+          },
+          "obs": {
+            "type": "mixed",
+            "properties": {}
+          },
+          "sen": {
+            "type": "mixed",
+            "properties": {}
+          },
+          "actions": {
+            "type": "mixed",
+            "properties": {}
+          },
+          "pings": {
+            "type": "mixed",
+            "properties": {}
+          },
+          "purchase": {
+            "type": "mixed",
+            "properties": {
+              "greater_crit": {
+                "type": "integer"
+              },
+              "flying_courier": {
+                "type": "integer"
+              },
+              "flask": {
+                "type": "integer"
+              },
+              "mithril_hammer": {
+                "type": "integer"
+              },
+              "blades_of_attack": {
+                "type": "integer"
+              },
+              "tpscroll": {
+                "type": "integer"
+              },
+              "courier": {
+                "type": "integer"
+              },
+              "desolator": {
+                "type": "integer"
+              },
+              "demon_edge": {
+                "type": "integer"
+              },
+              "mask_of_madness": {
+                "type": "integer"
+              },
+              "lifesteal": {
+                "type": "integer"
+              },
+              "slippers": {
+                "type": "integer"
+              },
+              "tango": {
+                "type": "integer"
+              },
+              "broadsword": {
+                "type": "integer"
+              },
+              "lesser_crit": {
+                "type": "integer"
+              },
+              "branches": {
+                "type": "integer"
+              },
+              "boots": {
+                "type": "integer"
+              },
+              "platemail": {
+                "type": "integer"
+              },
+              "ward_observer": {
+                "type": "integer"
+              },
+              "mekansm": {
+                "type": "integer"
+              },
+              "buckler": {
+                "type": "integer"
+              },
+              "phase_boots": {
+                "type": "integer"
+              },
+              "ring_of_regen": {
+                "type": "integer"
+              },
+              "stout_shield": {
+                "type": "integer"
+              },
+              "headdress": {
+                "type": "integer"
+              },
+              "void_stone": {
+                "type": "integer"
+              },
+              "hyperstone": {
+                "type": "integer"
+              },
+              "assault": {
+                "type": "integer"
+              },
+              "chainmail": {
+                "type": "integer"
+              },
+              "claymore": {
+                "type": "integer"
+              },
+              "ring_of_protection": {
+                "type": "integer"
+              },
+              "shadow_amulet": {
+                "type": "integer"
+              },
+              "ring_of_basilius": {
+                "type": "integer"
+              },
+              "gloves": {
+                "type": "integer"
+              },
+              "invis_sword": {
+                "type": "integer"
+              },
+              "hand_of_midas": {
+                "type": "integer"
+              },
+              "sobi_mask": {
+                "type": "integer"
+              },
+              "ogre_axe": {
+                "type": "integer"
+              },
+              "dagon": {
+                "type": "integer"
+              },
+              "tranquil_boots": {
+                "type": "integer"
+              },
+              "mantle": {
+                "type": "integer"
+              },
+              "staff_of_wizardry": {
+                "type": "integer"
+              },
+              "point_booster": {
+                "type": "integer"
+              },
+              "circlet": {
+                "type": "integer"
+              },
+              "blade_of_alacrity": {
+                "type": "integer"
+              },
+              "dagon_3": {
+                "type": "integer"
+              },
+              "dagon_2": {
+                "type": "integer"
+              },
+              "ultimate_scepter": {
+                "type": "integer"
+              },
+              "null_talisman": {
+                "type": "integer"
+              },
+              "dagon_4": {
+                "type": "integer"
+              },
+              "mjollnir": {
+                "type": "integer"
+              },
+              "power_treads": {
+                "type": "integer"
+              },
+              "ring_of_health": {
+                "type": "integer"
+              },
+              "belt_of_strength": {
+                "type": "integer"
+              },
+              "maelstrom": {
+                "type": "integer"
+              },
+              "pers": {
+                "type": "integer"
+              },
+              "quelling_blade": {
+                "type": "integer"
+              },
+              "bfury": {
+                "type": "integer"
+              },
+              "robe": {
+                "type": "integer"
+              },
+              "talisman_of_evasion": {
+                "type": "integer"
+              },
+              "heavens_halberd": {
+                "type": "integer"
+              },
+              "sange": {
+                "type": "integer"
+              },
+              "arcane_boots": {
+                "type": "integer"
+              },
+              "energy_booster": {
+                "type": "integer"
+              },
+              "cyclone": {
+                "type": "integer"
+              },
+              "clarity": {
+                "type": "integer"
+              },
+              "ghost": {
+                "type": "integer"
+              },
+              "vanguard": {
+                "type": "integer"
+              },
+              "reaver": {
+                "type": "integer"
+              },
+              "bottle": {
+                "type": "integer"
+              },
+              "vitality_booster": {
+                "type": "integer"
+              },
+              "smoke_of_deceit": {
+                "type": "integer"
+              },
+              "helm_of_iron_will": {
+                "type": "integer"
+              },
+              "helm_of_the_dominator": {
+                "type": "integer"
+              },
+              "yasha": {
+                "type": "integer"
+              },
+              "sange_and_yasha": {
+                "type": "integer"
+              },
+              "quarterstaff": {
+                "type": "integer"
+              },
+              "boots_of_elves": {
+                "type": "integer"
+              },
+              "ward_sentry": {
+                "type": "integer"
+              },
+              "force_staff": {
+                "type": "integer"
+              },
+              "vladmir": {
+                "type": "integer"
+              },
+              "blink": {
+                "type": "integer"
+              },
+              "magic_wand": {
+                "type": "integer"
+              },
+              "magic_stick": {
+                "type": "integer"
+              },
+              "ultimate_orb": {
+                "type": "integer"
+              },
+              "manta": {
+                "type": "integer"
+              },
+              "mystic_staff": {
+                "type": "integer"
+              },
+              "shivas_guard": {
+                "type": "integer"
+              },
+              "sheepstick": {
+                "type": "integer"
+              },
+              "oblivion_staff": {
+                "type": "integer"
+              },
+              "orchid": {
+                "type": "integer"
+              },
+              "bloodstone": {
+                "type": "integer"
+              },
+              "travel_boots": {
+                "type": "integer"
+              },
+              "soul_booster": {
+                "type": "integer"
+              },
+              "soul_ring": {
+                "type": "integer"
+              },
+              "poor_mans_shield": {
+                "type": "integer"
+              },
+              "black_king_bar": {
+                "type": "integer"
+              },
+              "orb_of_venom": {
+                "type": "integer"
+              },
+              "gauntlets": {
+                "type": "integer"
+              },
+              "bracer": {
+                "type": "integer"
+              },
+              "javelin": {
+                "type": "integer"
+              },
+              "medallion_of_courage": {
+                "type": "integer"
+              },
+              "cloak": {
+                "type": "integer"
+              },
+              "basher": {
+                "type": "integer"
+              },
+              "abyssal_blade": {
+                "type": "integer"
+              },
+              "relic": {
+                "type": "integer"
+              },
+              "skadi": {
+                "type": "integer"
+              },
+              "dust": {
+                "type": "integer"
+              },
+              "butterfly": {
+                "type": "integer"
+              },
+              "eagle": {
+                "type": "integer"
+              },
+              "ancient_janggo": {
+                "type": "integer"
+              },
+              "wraith_band": {
+                "type": "integer"
+              },
+              "sphere": {
+                "type": "integer"
+              },
+              "blade_mail": {
+                "type": "integer"
+              },
+              "monkey_king_bar": {
+                "type": "integer"
+              },
+              "urn_of_shadows": {
+                "type": "integer"
+              },
+              "rapier": {
+                "type": "integer"
+              },
+              "gem": {
+                "type": "integer"
+              },
+              "radiance": {
+                "type": "integer"
+              },
+              "refresher": {
+                "type": "integer"
+              },
+              "ethereal_blade": {
+                "type": "integer"
+              },
+              "ring_of_aquila": {
+                "type": "integer"
+              },
+              "hood_of_defiance": {
+                "type": "integer"
+              },
+              "pipe": {
+                "type": "integer"
+              },
+              "rod_of_atos": {
+                "type": "integer"
+              }
+            }
+          },
+          "gold_reasons": {
+            "type": "mixed",
+            "properties": {
+              "0": {
+                "type": "integer"
+              },
+              "1": {
+                "type": "integer"
+              },
+              "2": {
+                "type": "integer"
+              },
+              "11": {
+                "type": "integer"
+              },
+              "12": {
+                "type": "integer"
+              },
+              "13": {
+                "type": "integer"
+              },
+              "6": {
+                "type": "integer"
+              },
+              "14": {
+                "type": "integer"
+              },
+              "15": {
+                "type": "integer"
+              },
+              "5": {
+                "type": "integer"
+              }
+            }
+          },
+          "xp_reasons": {
+            "type": "mixed",
+            "properties": {
+              "0": {
+                "type": "integer"
+              },
+              "1": {
+                "type": "integer"
+              },
+              "2": {
+                "type": "integer"
+              },
+              "3": {
+                "type": "integer"
+              }
+            }
+          },
+          "killed": {
+            "type": "mixed",
+            "properties": {
+              "npc_dota_creep_goodguys_melee": {
+                "type": "integer"
+              },
+              "npc_dota_badguys_tower1_mid": {
+                "type": "integer"
+              },
+              "npc_dota_hero_troll_warlord": {
+                "type": "integer"
+              },
+              "npc_dota_creep_badguys_ranged": {
+                "type": "integer"
+              },
+              "npc_dota_badguys_fillers": {
+                "type": "integer"
+              },
+              "npc_dota_badguys_tower2_mid": {
+                "type": "integer"
+              },
+              "npc_dota_creep_badguys_melee": {
+                "type": "integer"
+              },
+              "npc_dota_badguys_range_rax_mid": {
+                "type": "integer"
+              },
+              "npc_dota_hero_wisp": {
+                "type": "integer"
+              },
+              "npc_dota_badguys_siege": {
+                "type": "integer"
+              },
+              "npc_dota_hero_magnataur": {
+                "type": "integer"
+              },
+              "npc_dota_hero_death_prophet": {
+                "type": "integer"
+              },
+              "npc_dota_badguys_tower2_top": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_kobold": {
+                "type": "integer"
+              },
+              "npc_dota_goodguys_tower1_bot": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_enraged_wildkin": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_wildkin": {
+                "type": "integer"
+              },
+              "npc_dota_creep_goodguys_ranged": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_kobold_taskmaster": {
+                "type": "integer"
+              },
+              "npc_dota_badguys_tower2_bot": {
+                "type": "integer"
+              },
+              "npc_dota_badguys_tower4": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_kobold_tunneler": {
+                "type": "integer"
+              },
+              "npc_dota_hero_lina": {
+                "type": "integer"
+              },
+              "npc_dota_badguys_tower1_bot": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_gnoll_assassin": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_dark_troll_warlord": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_small_thunder_lizard": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_dark_troll": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_polar_furbolg_ursa_warrior": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_polar_furbolg_champion": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_ogre_magi": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_ogre_mauler": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_centaur_khan": {
+                "type": "integer"
+              },
+              "npc_dota_goodguys_siege": {
+                "type": "integer"
+              },
+              "npc_dota_badguys_fort": {
+                "type": "integer"
+              },
+              "npc_dota_dark_troll_warlord_skeleton_warrior": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_big_thunder_lizard": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_centaur_outrunner": {
+                "type": "integer"
+              },
+              "npc_dota_hero_doom_bringer": {
+                "type": "integer"
+              },
+              "npc_dota_hero_lion": {
+                "type": "integer"
+              },
+              "npc_dota_goodguys_fillers": {
+                "type": "integer"
+              },
+              "npc_dota_hero_sniper": {
+                "type": "integer"
+              },
+              "npc_dota_hero_faceless_void": {
+                "type": "integer"
+              },
+              "npc_dota_goodguys_tower3_mid": {
+                "type": "integer"
+              },
+              "npc_dota_goodguys_tower2_mid": {
+                "type": "integer"
+              },
+              "npc_dota_goodguys_tower2_bot": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_rock_golem": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_black_dragon": {
+                "type": "integer"
+              },
+              "npc_dota_goodguys_tower1_mid": {
+                "type": "integer"
+              },
+              "npc_dota_roshan": {
+                "type": "integer"
+              },
+              "npc_dota_goodguys_tower1_top": {
+                "type": "integer"
+              },
+              "npc_dota_hero_sven": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_black_drake": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_mud_golem": {
+                "type": "integer"
+              },
+              "npc_dota_goodguys_tower2_top": {
+                "type": "integer"
+              },
+              "npc_dota_hero_juggernaut": {
+                "type": "integer"
+              },
+              "npc_dota_hero_bloodseeker": {
+                "type": "integer"
+              },
+              "npc_dota_hero_shadow_demon": {
+                "type": "integer"
+              },
+              "npc_dota_juggernaut_healing_ward": {
+                "type": "integer"
+              },
+              "npc_dota_hero_pudge": {
+                "type": "integer"
+              },
+              "npc_dota_badguys_melee_rax_top": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_giant_wolf": {
+                "type": "integer"
+              },
+              "npc_dota_badguys_range_rax_top": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_harpy_scout": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_satyr_hellcaller": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_granite_golem": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_satyr_soulstealer": {
+                "type": "integer"
+              },
+              "npc_dota_badguys_tower3_mid": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_satyr_trickster": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_alpha_wolf": {
+                "type": "integer"
+              },
+              "npc_dota_hero_spectre": {
+                "type": "integer"
+              },
+              "npc_dota_hero_earth_spirit": {
+                "type": "integer"
+              },
+              "npc_dota_creep_goodguys_ranged_upgraded": {
+                "type": "integer"
+              },
+              "npc_dota_hero_storm_spirit": {
+                "type": "integer"
+              },
+              "npc_dota_hero_disruptor": {
+                "type": "integer"
+              },
+              "npc_dota_creep_goodguys_melee_upgraded": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_harpy_storm": {
+                "type": "integer"
+              },
+              "npc_dota_hero_abaddon": {
+                "type": "integer"
+              },
+              "npc_dota_hero_mirana": {
+                "type": "integer"
+              },
+              "npc_dota_creep_badguys_melee_upgraded": {
+                "type": "integer"
+              },
+              "npc_dota_hero_phantom_assassin": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_ghost": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_fel_beast": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_forest_troll_berserker": {
+                "type": "integer"
+              },
+              "npc_dota_creep_badguys_ranged_upgraded": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_forest_troll_high_priest": {
+                "type": "integer"
+              },
+              "npc_dota_hero_vengefulspirit": {
+                "type": "integer"
+              },
+              "npc_dota_goodguys_range_rax_mid": {
+                "type": "integer"
+              },
+              "npc_dota_goodguys_melee_rax_mid": {
+                "type": "integer"
+              },
+              "npc_dota_goodguys_fort": {
+                "type": "integer"
+              },
+              "npc_dota_goodguys_tower4": {
+                "type": "integer"
+              },
+              "npc_dota_hero_earthshaker": {
+                "type": "integer"
+              },
+              "npc_dota_hero_silencer": {
+                "type": "integer"
+              },
+              "npc_dota_hero_dark_seer": {
+                "type": "integer"
+              },
+              "npc_dota_courier": {
+                "type": "integer"
+              },
+              "npc_dota_observer_wards": {
+                "type": "integer"
+              },
+              "npc_dota_hero_nyx_assassin": {
+                "type": "integer"
+              },
+              "npc_dota_hero_crystal_maiden": {
+                "type": "integer"
+              },
+              "npc_dota_badguys_siege_upgraded": {
+                "type": "integer"
+              },
+              "npc_dota_brewmaster_fire_1": {
+                "type": "integer"
+              },
+              "npc_dota_brewmaster_fire_2": {
+                "type": "integer"
+              },
+              "npc_dota_brewmaster_earth_1": {
+                "type": "integer"
+              },
+              "npc_dota_brewmaster_earth_2": {
+                "type": "integer"
+              },
+              "npc_dota_brewmaster_storm_1": {
+                "type": "integer"
+              },
+              "npc_dota_brewmaster_storm_2": {
+                "type": "integer"
+              },
+              "npc_dota_badguys_tower1_top": {
+                "type": "integer"
+              },
+              "npc_dota_sentry_wards": {
+                "type": "integer"
+              },
+              "npc_dota_hero_zuus": {
+                "type": "integer"
+              },
+              "npc_dota_hero_leshrac": {
+                "type": "integer"
+              },
+              "npc_dota_hero_drow_ranger": {
+                "type": "integer"
+              },
+              "npc_dota_hero_brewmaster": {
+                "type": "integer"
+              },
+              "npc_dota_goodguys_tower3_bot": {
+                "type": "integer"
+              },
+              "npc_dota_goodguys_melee_rax_bot": {
+                "type": "integer"
+              },
+              "npc_dota_hero_oracle": {
+                "type": "integer"
+              },
+              "npc_dota_hero_spirit_breaker": {
+                "type": "integer"
+              },
+              "npc_dota_badguys_tower3_bot": {
+                "type": "integer"
+              },
+              "npc_dota_hero_rubick": {
+                "type": "integer"
+              },
+              "npc_dota_hero_techies": {
+                "type": "integer"
+              },
+              "npc_dota_techies_land_mine": {
+                "type": "integer"
+              },
+              "npc_dota_techies_remote_mine": {
+                "type": "integer"
+              },
+              "npc_dota_techies_stasis_trap": {
+                "type": "integer"
+              },
+              "npc_dota_badguys_melee_rax_mid": {
+                "type": "integer"
+              },
+              "npc_dota_badguys_range_rax_bot": {
+                "type": "integer"
+              },
+              "npc_dota_hero_queenofpain": {
+                "type": "integer"
+              },
+              "npc_dota_hero_axe": {
+                "type": "integer"
+              },
+              "npc_dota_hero_elder_titan": {
+                "type": "integer"
+              },
+              "npc_dota_badguys_tower3_top": {
+                "type": "integer"
+              },
+              "npc_dota_hero_riki": {
+                "type": "integer"
+              },
+              "npc_dota_badguys_melee_rax_bot": {
+                "type": "integer"
+              },
+              "npc_dota_hero_dragon_knight": {
+                "type": "integer"
+              },
+              "npc_dota_hero_slardar": {
+                "type": "integer"
+              },
+              "npc_dota_hero_omniknight": {
+                "type": "integer"
+              },
+              "npc_dota_hero_windrunner": {
+                "type": "integer"
+              },
+              "npc_dota_hero_skywrath_mage": {
+                "type": "integer"
+              },
+              "npc_dota_hero_slark": {
+                "type": "integer"
+              },
+              "npc_dota_hero_dazzle": {
+                "type": "integer"
+              },
+              "npc_dota_goodguys_siege_upgraded": {
+                "type": "integer"
+              },
+              "npc_dota_weaver_swarm": {
+                "type": "integer"
+              },
+              "npc_dota_hero_weaver": {
+                "type": "integer"
+              },
+              "npc_dota_hero_sand_king": {
+                "type": "integer"
+              },
+              "npc_dota_goodguys_range_rax_top": {
+                "type": "integer"
+              },
+              "npc_dota_goodguys_range_rax_bot": {
+                "type": "integer"
+              },
+              "npc_dota_goodguys_tower3_top": {
+                "type": "integer"
+              },
+              "npc_dota_goodguys_melee_rax_top": {
+                "type": "integer"
+              }
+            }
+          },
+          "item_uses": {
+            "type": "mixed",
+            "properties": {
+              "flask": {
+                "type": "integer"
+              },
+              "tango": {
+                "type": "integer"
+              },
+              "tpscroll": {
+                "type": "integer"
+              },
+              "courier": {
+                "type": "integer"
+              },
+              "ward_observer": {
+                "type": "integer"
+              },
+              "mekansm": {
+                "type": "integer"
+              },
+              "phase_boots": {
+                "type": "integer"
+              },
+              "hand_of_midas": {
+                "type": "integer"
+              },
+              "invis_sword": {
+                "type": "integer"
+              },
+              "dagon_3": {
+                "type": "integer"
+              },
+              "dagon_2": {
+                "type": "integer"
+              },
+              "dagon_4": {
+                "type": "integer"
+              },
+              "mjollnir": {
+                "type": "integer"
+              },
+              "quelling_blade": {
+                "type": "integer"
+              },
+              "heavens_halberd": {
+                "type": "integer"
+              },
+              "arcane_boots": {
+                "type": "integer"
+              },
+              "cyclone": {
+                "type": "integer"
+              },
+              "clarity": {
+                "type": "integer"
+              },
+              "ghost": {
+                "type": "integer"
+              },
+              "smoke_of_deceit": {
+                "type": "integer"
+              },
+              "bottle": {
+                "type": "integer"
+              },
+              "mask_of_madness": {
+                "type": "integer"
+              },
+              "dagon": {
+                "type": "integer"
+              },
+              "force_staff": {
+                "type": "integer"
+              },
+              "blink": {
+                "type": "integer"
+              },
+              "magic_wand": {
+                "type": "integer"
+              },
+              "power_treads": {
+                "type": "integer"
+              },
+              "manta": {
+                "type": "integer"
+              },
+              "shivas_guard": {
+                "type": "integer"
+              },
+              "orchid": {
+                "type": "integer"
+              },
+              "tango_single": {
+                "type": "integer"
+              },
+              "sheepstick": {
+                "type": "integer"
+              },
+              "travel_boots": {
+                "type": "integer"
+              },
+              "soul_ring": {
+                "type": "integer"
+              },
+              "magic_stick": {
+                "type": "integer"
+              },
+              "ring_of_basilius": {
+                "type": "integer"
+              },
+              "black_king_bar": {
+                "type": "integer"
+              },
+              "medallion_of_courage": {
+                "type": "integer"
+              },
+              "buckler": {
+                "type": "integer"
+              },
+              "abyssal_blade": {
+                "type": "integer"
+              },
+              "bloodstone": {
+                "type": "integer"
+              },
+              "ward_sentry": {
+                "type": "integer"
+              },
+              "dust": {
+                "type": "integer"
+              },
+              "ancient_janggo": {
+                "type": "integer"
+              },
+              "blade_mail": {
+                "type": "integer"
+              },
+              "urn_of_shadows": {
+                "type": "integer"
+              },
+              "refresher": {
+                "type": "integer"
+              },
+              "ethereal_blade": {
+                "type": "integer"
+              },
+              "ring_of_aquila": {
+                "type": "integer"
+              },
+              "pipe": {
+                "type": "integer"
+              },
+              "rod_of_atos": {
+                "type": "integer"
+              }
+            }
+          },
+          "ability_uses": {
+            "type": "mixed",
+            "properties": {
+              "sniper_assassinate": {
+                "type": "integer"
+              },
+              "sniper_shrapnel": {
+                "type": "integer"
+              },
+              "sven_warcry": {
+                "type": "integer"
+              },
+              "sven_gods_strength": {
+                "type": "integer"
+              },
+              "sven_storm_bolt": {
+                "type": "integer"
+              },
+              "doom_bringer_scorched_earth": {
+                "type": "integer"
+              },
+              "doom_bringer_lvl_death": {
+                "type": "integer"
+              },
+              "doom_bringer_devour": {
+                "type": "integer"
+              },
+              "doom_bringer_doom": {
+                "type": "integer"
+              },
+              "lion_finger_of_death": {
+                "type": "integer"
+              },
+              "lion_impale": {
+                "type": "integer"
+              },
+              "lion_voodoo": {
+                "type": "integer"
+              },
+              "lion_mana_drain": {
+                "type": "integer"
+              },
+              "faceless_void_chronosphere": {
+                "type": "integer"
+              },
+              "faceless_void_time_walk": {
+                "type": "integer"
+              },
+              "death_prophet_silence": {
+                "type": "integer"
+              },
+              "death_prophet_exorcism": {
+                "type": "integer"
+              },
+              "death_prophet_carrion_swarm": {
+                "type": "integer"
+              },
+              "wisp_relocate": {
+                "type": "integer"
+              },
+              "wisp_overcharge": {
+                "type": "integer"
+              },
+              "wisp_spirits_out": {
+                "type": "integer"
+              },
+              "wisp_tether": {
+                "type": "integer"
+              },
+              "wisp_tether_break": {
+                "type": "integer"
+              },
+              "wisp_spirits": {
+                "type": "integer"
+              },
+              "wisp_spirits_in": {
+                "type": "integer"
+              },
+              "lina_laguna_blade": {
+                "type": "integer"
+              },
+              "lina_dragon_slave": {
+                "type": "integer"
+              },
+              "lina_light_strike_array": {
+                "type": "integer"
+              },
+              "magnataur_skewer": {
+                "type": "integer"
+              },
+              "magnataur_empower": {
+                "type": "integer"
+              },
+              "magnataur_reverse_polarity": {
+                "type": "integer"
+              },
+              "magnataur_shockwave": {
+                "type": "integer"
+              },
+              "troll_warlord_whirling_axes_ranged": {
+                "type": "integer"
+              },
+              "troll_warlord_berserkers_rage": {
+                "type": "integer"
+              },
+              "troll_warlord_whirling_axes_melee": {
+                "type": "integer"
+              },
+              "troll_warlord_battle_trance": {
+                "type": "integer"
+              },
+              "earth_spirit_stone_caller": {
+                "type": "integer"
+              },
+              "earth_spirit_rolling_boulder": {
+                "type": "integer"
+              },
+              "earth_spirit_magnetize": {
+                "type": "integer"
+              },
+              "earth_spirit_boulder_smash": {
+                "type": "integer"
+              },
+              "earth_spirit_geomagnetic_grip": {
+                "type": "integer"
+              },
+              "disruptor_thunder_strike": {
+                "type": "integer"
+              },
+              "disruptor_glimpse": {
+                "type": "integer"
+              },
+              "disruptor_static_storm": {
+                "type": "integer"
+              },
+              "disruptor_kinetic_field": {
+                "type": "integer"
+              },
+              "spectre_reality": {
+                "type": "integer"
+              },
+              "spectre_haunt": {
+                "type": "integer"
+              },
+              "spectre_spectral_dagger": {
+                "type": "integer"
+              },
+              "storm_spirit_electric_vortex": {
+                "type": "integer"
+              },
+              "storm_spirit_static_remnant": {
+                "type": "integer"
+              },
+              "storm_spirit_ball_lightning": {
+                "type": "integer"
+              },
+              "bloodseeker_blood_bath": {
+                "type": "integer"
+              },
+              "bloodseeker_bloodrage": {
+                "type": "integer"
+              },
+              "bloodseeker_rupture": {
+                "type": "integer"
+              },
+              "juggernaut_omni_slash": {
+                "type": "integer"
+              },
+              "juggernaut_blade_fury": {
+                "type": "integer"
+              },
+              "juggernaut_healing_ward": {
+                "type": "integer"
+              },
+              "shadow_demon_demonic_purge": {
+                "type": "integer"
+              },
+              "shadow_demon_soul_catcher": {
+                "type": "integer"
+              },
+              "shadow_demon_disruption": {
+                "type": "integer"
+              },
+              "pudge_dismember": {
+                "type": "integer"
+              },
+              "pudge_meat_hook": {
+                "type": "integer"
+              },
+              "pudge_rot": {
+                "type": "integer"
+              },
+              "vengefulspirit_nether_swap": {
+                "type": "integer"
+              },
+              "vengefulspirit_magic_missile": {
+                "type": "integer"
+              },
+              "vengefulspirit_wave_of_terror": {
+                "type": "integer"
+              },
+              "dark_seer_vacuum": {
+                "type": "integer"
+              },
+              "dark_seer_wall_of_replica": {
+                "type": "integer"
+              },
+              "dark_seer_surge": {
+                "type": "integer"
+              },
+              "dark_seer_ion_shell": {
+                "type": "integer"
+              },
+              "earthshaker_fissure": {
+                "type": "integer"
+              },
+              "earthshaker_echo_slam": {
+                "type": "integer"
+              },
+              "earthshaker_enchant_totem": {
+                "type": "integer"
+              },
+              "silencer_last_word": {
+                "type": "integer"
+              },
+              "silencer_global_silence": {
+                "type": "integer"
+              },
+              "silencer_curse_of_the_silent": {
+                "type": "integer"
+              },
+              "phantom_assassin_stifling_dagger": {
+                "type": "integer"
+              },
+              "phantom_assassin_phantom_strike": {
+                "type": "integer"
+              },
+              "abaddon_borrowed_time": {
+                "type": "integer"
+              },
+              "abaddon_aphotic_shield": {
+                "type": "integer"
+              },
+              "abaddon_death_coil": {
+                "type": "integer"
+              },
+              "mirana_invis": {
+                "type": "integer"
+              },
+              "mirana_leap": {
+                "type": "integer"
+              },
+              "mirana_starfall": {
+                "type": "integer"
+              },
+              "mirana_arrow": {
+                "type": "integer"
+              },
+              "drow_ranger_wave_of_silence": {
+                "type": "integer"
+              },
+              "drow_ranger_trueshot": {
+                "type": "integer"
+              },
+              "brewmaster_thunder_clap": {
+                "type": "integer"
+              },
+              "brewmaster_drunken_haze": {
+                "type": "integer"
+              },
+              "brewmaster_primal_split": {
+                "type": "integer"
+              },
+              "brewmaster_earth_hurl_boulder": {
+                "type": "integer"
+              },
+              "leshrac_lightning_storm": {
+                "type": "integer"
+              },
+              "leshrac_split_earth": {
+                "type": "integer"
+              },
+              "leshrac_pulse_nova": {
+                "type": "integer"
+              },
+              "leshrac_diabolic_edict": {
+                "type": "integer"
+              },
+              "zuus_arc_lightning": {
+                "type": "integer"
+              },
+              "zuus_lightning_bolt": {
+                "type": "integer"
+              },
+              "zuus_thundergods_wrath": {
+                "type": "integer"
+              },
+              "crystal_maiden_frostbite": {
+                "type": "integer"
+              },
+              "crystal_maiden_crystal_nova": {
+                "type": "integer"
+              },
+              "crystal_maiden_freezing_field": {
+                "type": "integer"
+              },
+              "nyx_assassin_mana_burn": {
+                "type": "integer"
+              },
+              "nyx_assassin_spiked_carapace": {
+                "type": "integer"
+              },
+              "nyx_assassin_vendetta": {
+                "type": "integer"
+              },
+              "nyx_assassin_impale": {
+                "type": "integer"
+              },
+              "queenofpain_blink": {
+                "type": "integer"
+              },
+              "queenofpain_sonic_wave": {
+                "type": "integer"
+              },
+              "queenofpain_shadow_strike": {
+                "type": "integer"
+              },
+              "queenofpain_scream_of_pain": {
+                "type": "integer"
+              },
+              "techies_remote_mines": {
+                "type": "integer"
+              },
+              "techies_stasis_trap": {
+                "type": "integer"
+              },
+              "techies_suicide": {
+                "type": "integer"
+              },
+              "techies_land_mines": {
+                "type": "integer"
+              },
+              "axe_berserkers_call": {
+                "type": "integer"
+              },
+              "axe_battle_hunger": {
+                "type": "integer"
+              },
+              "axe_culling_blade": {
+                "type": "integer"
+              },
+              "spirit_breaker_nether_strike": {
+                "type": "integer"
+              },
+              "spirit_breaker_charge_of_darkness": {
+                "type": "integer"
+              },
+              "spirit_breaker_empowering_haste": {
+                "type": "integer"
+              },
+              "oracle_purifying_flames": {
+                "type": "integer"
+              },
+              "oracle_false_promise": {
+                "type": "integer"
+              },
+              "oracle_fates_edict": {
+                "type": "integer"
+              },
+              "oracle_fortunes_end": {
+                "type": "integer"
+              },
+              "rubick_spell_steal": {
+                "type": "integer"
+              },
+              "rubick_fade_bolt": {
+                "type": "integer"
+              },
+              "rubick_telekinesis": {
+                "type": "integer"
+              },
+              "rubick_telekinesis_land": {
+                "type": "integer"
+              },
+              "dragon_knight_dragon_tail": {
+                "type": "integer"
+              },
+              "tidehunter_anchor_smash": {
+                "type": "integer"
+              },
+              "tidehunter_ravage": {
+                "type": "integer"
+              },
+              "slardar_slithereen_crush": {
+                "type": "integer"
+              },
+              "dragon_knight_breathe_fire": {
+                "type": "integer"
+              },
+              "slardar_amplify_damage": {
+                "type": "integer"
+              },
+              "omniknight_repel": {
+                "type": "integer"
+              },
+              "elder_titan_echo_stomp": {
+                "type": "integer"
+              },
+              "dragon_knight_elder_dragon_form": {
+                "type": "integer"
+              },
+              "omniknight_purification": {
+                "type": "integer"
+              },
+              "riki_blink_strike": {
+                "type": "integer"
+              },
+              "slardar_sprint": {
+                "type": "integer"
+              },
+              "tidehunter_gush": {
+                "type": "integer"
+              },
+              "slark_dark_pact": {
+                "type": "integer"
+              },
+              "slark_pounce": {
+                "type": "integer"
+              },
+              "slark_shadow_dance": {
+                "type": "integer"
+              },
+              "dazzle_shallow_grave": {
+                "type": "integer"
+              },
+              "dazzle_poison_touch": {
+                "type": "integer"
+              },
+              "dazzle_shadow_wave": {
+                "type": "integer"
+              },
+              "dazzle_weave": {
+                "type": "integer"
+              },
+              "skywrath_mage_concussive_shot": {
+                "type": "integer"
+              },
+              "skywrath_mage_arcane_bolt": {
+                "type": "integer"
+              },
+              "skywrath_mage_mystic_flare": {
+                "type": "integer"
+              },
+              "skywrath_mage_ancient_seal": {
+                "type": "integer"
+              },
+              "windrunner_powershot": {
+                "type": "integer"
+              },
+              "windrunner_windrun": {
+                "type": "integer"
+              },
+              "windrunner_shackleshot": {
+                "type": "integer"
+              },
+              "windrunner_focusfire": {
+                "type": "integer"
+              },
+              "weaver_shukuchi": {
+                "type": "integer"
+              },
+              "weaver_time_lapse": {
+                "type": "integer"
+              },
+              "weaver_the_swarm": {
+                "type": "integer"
+              },
+              "sandking_burrowstrike": {
+                "type": "integer"
+              },
+              "sandking_sand_storm": {
+                "type": "integer"
+              },
+              "sandking_epicenter": {
+                "type": "integer"
+              },
+              "omniknight_guardian_angel": {
+                "type": "integer"
+              }
+            }
+          },
+          "hero_hits": {
+            "type": "mixed",
+            "properties": {
+              "null": {
+                "type": "integer"
+              },
+              "sniper_assassinate": {
+                "type": "integer"
+              },
+              "sniper_shrapnel": {
+                "type": "integer"
+              },
+              "sven_great_cleave": {
+                "type": "integer"
+              },
+              "sven_storm_bolt": {
+                "type": "integer"
+              },
+              "doom_bringer_scorched_earth": {
+                "type": "integer"
+              },
+              "doom_bringer_lvl_death": {
+                "type": "integer"
+              },
+              "doom_bringer_doom": {
+                "type": "integer"
+              },
+              "lion_finger_of_death": {
+                "type": "integer"
+              },
+              "lion_impale": {
+                "type": "integer"
+              },
+              "dagon_3": {
+                "type": "integer"
+              },
+              "dagon_2": {
+                "type": "integer"
+              },
+              "dagon_4": {
+                "type": "integer"
+              },
+              "mjollnir": {
+                "type": "integer"
+              },
+              "bfury": {
+                "type": "integer"
+              },
+              "death_prophet_exorcism": {
+                "type": "integer"
+              },
+              "death_prophet_carrion_swarm": {
+                "type": "integer"
+              },
+              "wisp_overcharge": {
+                "type": "integer"
+              },
+              "wisp_spirits": {
+                "type": "integer"
+              },
+              "cyclone": {
+                "type": "integer"
+              },
+              "lina_laguna_blade": {
+                "type": "integer"
+              },
+              "lina_dragon_slave": {
+                "type": "integer"
+              },
+              "lina_light_strike_array": {
+                "type": "integer"
+              },
+              "magnataur_skewer": {
+                "type": "integer"
+              },
+              "magnataur_empower": {
+                "type": "integer"
+              },
+              "magnataur_reverse_polarity": {
+                "type": "integer"
+              },
+              "magnataur_shockwave": {
+                "type": "integer"
+              },
+              "troll_warlord_whirling_axes_ranged": {
+                "type": "integer"
+              },
+              "troll_warlord_whirling_axes_melee": {
+                "type": "integer"
+              },
+              "dagon": {
+                "type": "integer"
+              },
+              "earth_spirit_rolling_boulder": {
+                "type": "integer"
+              },
+              "earth_spirit_magnetize": {
+                "type": "integer"
+              },
+              "earth_spirit_boulder_smash": {
+                "type": "integer"
+              },
+              "earth_spirit_geomagnetic_grip": {
+                "type": "integer"
+              },
+              "disruptor_thunder_strike": {
+                "type": "integer"
+              },
+              "disruptor_static_storm": {
+                "type": "integer"
+              },
+              "spectre_dispersion": {
+                "type": "integer"
+              },
+              "spectre_spectral_dagger": {
+                "type": "integer"
+              },
+              "spectre_desolate": {
+                "type": "integer"
+              },
+              "shivas_guard": {
+                "type": "integer"
+              },
+              "storm_spirit_static_remnant": {
+                "type": "integer"
+              },
+              "orchid": {
+                "type": "integer"
+              },
+              "storm_spirit_ball_lightning": {
+                "type": "integer"
+              },
+              "storm_spirit_overload": {
+                "type": "integer"
+              },
+              "bloodseeker_blood_bath": {
+                "type": "integer"
+              },
+              "bloodseeker_rupture": {
+                "type": "integer"
+              },
+              "juggernaut_omni_slash": {
+                "type": "integer"
+              },
+              "juggernaut_blade_fury": {
+                "type": "integer"
+              },
+              "maelstrom": {
+                "type": "integer"
+              },
+              "orb_of_venom": {
+                "type": "integer"
+              },
+              "shadow_demon_demonic_purge": {
+                "type": "integer"
+              },
+              "pudge_dismember": {
+                "type": "integer"
+              },
+              "pudge_meat_hook": {
+                "type": "integer"
+              },
+              "pudge_rot": {
+                "type": "integer"
+              },
+              "vengefulspirit_magic_missile": {
+                "type": "integer"
+              },
+              "vengefulspirit_wave_of_terror": {
+                "type": "integer"
+              },
+              "dark_seer_vacuum": {
+                "type": "integer"
+              },
+              "dark_seer_wall_of_replica": {
+                "type": "integer"
+              },
+              "dark_seer_ion_shell": {
+                "type": "integer"
+              },
+              "earthshaker_fissure": {
+                "type": "integer"
+              },
+              "earthshaker_echo_slam": {
+                "type": "integer"
+              },
+              "earthshaker_aftershock": {
+                "type": "integer"
+              },
+              "silencer_last_word": {
+                "type": "integer"
+              },
+              "silencer_glaives_of_wisdom": {
+                "type": "integer"
+              },
+              "silencer_curse_of_the_silent": {
+                "type": "integer"
+              },
+              "abaddon_borrowed_time": {
+                "type": "integer"
+              },
+              "phantom_assassin_stifling_dagger": {
+                "type": "integer"
+              },
+              "abaddon_aphotic_shield": {
+                "type": "integer"
+              },
+              "abaddon_death_coil": {
+                "type": "integer"
+              },
+              "mirana_starfall": {
+                "type": "integer"
+              },
+              "mirana_arrow": {
+                "type": "integer"
+              },
+              "bloodstone": {
+                "type": "integer"
+              },
+              "brewmaster_thunder_clap": {
+                "type": "integer"
+              },
+              "brewmaster_fire_permanent_immolation": {
+                "type": "integer"
+              },
+              "brewmaster_earth_hurl_boulder": {
+                "type": "integer"
+              },
+              "brewmaster_earth_pulverize": {
+                "type": "integer"
+              },
+              "leshrac_lightning_storm": {
+                "type": "integer"
+              },
+              "leshrac_split_earth": {
+                "type": "integer"
+              },
+              "leshrac_diabolic_edict": {
+                "type": "integer"
+              },
+              "zuus_static_field": {
+                "type": "integer"
+              },
+              "zuus_arc_lightning": {
+                "type": "integer"
+              },
+              "zuus_lightning_bolt": {
+                "type": "integer"
+              },
+              "zuus_thundergods_wrath": {
+                "type": "integer"
+              },
+              "crystal_maiden_frostbite": {
+                "type": "integer"
+              },
+              "crystal_maiden_crystal_nova": {
+                "type": "integer"
+              },
+              "crystal_maiden_freezing_field": {
+                "type": "integer"
+              },
+              "nyx_assassin_mana_burn": {
+                "type": "integer"
+              },
+              "nyx_assassin_spiked_carapace": {
+                "type": "integer"
+              },
+              "nyx_assassin_vendetta": {
+                "type": "integer"
+              },
+              "nyx_assassin_impale": {
+                "type": "integer"
+              },
+              "queenofpain_sonic_wave": {
+                "type": "integer"
+              },
+              "queenofpain_shadow_strike": {
+                "type": "integer"
+              },
+              "queenofpain_scream_of_pain": {
+                "type": "integer"
+              },
+              "techies_suicide": {
+                "type": "integer"
+              },
+              "techies_land_mines": {
+                "type": "integer"
+              },
+              "techies_remote_mines": {
+                "type": "integer"
+              },
+              "blade_mail": {
+                "type": "integer"
+              },
+              "axe_battle_hunger": {
+                "type": "integer"
+              },
+              "axe_counter_helix": {
+                "type": "integer"
+              },
+              "oracle_false_promise": {
+                "type": "integer"
+              },
+              "axe_culling_blade": {
+                "type": "integer"
+              },
+              "spirit_breaker_nether_strike": {
+                "type": "integer"
+              },
+              "spirit_breaker_greater_bash": {
+                "type": "integer"
+              },
+              "urn_of_shadows": {
+                "type": "integer"
+              },
+              "oracle_purifying_flames": {
+                "type": "integer"
+              },
+              "oracle_fortunes_end": {
+                "type": "integer"
+              },
+              "rubick_fade_bolt": {
+                "type": "integer"
+              },
+              "dragon_knight_dragon_tail": {
+                "type": "integer"
+              },
+              "tidehunter_anchor_smash": {
+                "type": "integer"
+              },
+              "tidehunter_ravage": {
+                "type": "integer"
+              },
+              "slardar_slithereen_crush": {
+                "type": "integer"
+              },
+              "dragon_knight_breathe_fire": {
+                "type": "integer"
+              },
+              "radiance": {
+                "type": "integer"
+              },
+              "elder_titan_echo_stomp": {
+                "type": "integer"
+              },
+              "dragon_knight_elder_dragon_form": {
+                "type": "integer"
+              },
+              "omniknight_purification": {
+                "type": "integer"
+              },
+              "riki_blink_strike": {
+                "type": "integer"
+              },
+              "tidehunter_gush": {
+                "type": "integer"
+              },
+              "ethereal_blade": {
+                "type": "integer"
+              },
+              "slark_dark_pact": {
+                "type": "integer"
+              },
+              "slark_pounce": {
+                "type": "integer"
+              },
+              "dazzle_poison_touch": {
+                "type": "integer"
+              },
+              "dazzle_shadow_wave": {
+                "type": "integer"
+              },
+              "skywrath_mage_concussive_shot": {
+                "type": "integer"
+              },
+              "skywrath_mage_arcane_bolt": {
+                "type": "integer"
+              },
+              "skywrath_mage_mystic_flare": {
+                "type": "integer"
+              },
+              "windrunner_powershot": {
+                "type": "integer"
+              },
+              "weaver_shukuchi": {
+                "type": "integer"
+              },
+              "weaver_the_swarm": {
+                "type": "integer"
+              },
+              "sandking_caustic_finale": {
+                "type": "integer"
+              },
+              "sandking_burrowstrike": {
+                "type": "integer"
+              },
+              "sandking_sand_storm": {
+                "type": "integer"
+              },
+              "sandking_epicenter": {
+                "type": "integer"
+              }
+            }
+          },
+          "damage": {
+            "type": "mixed",
+            "properties": {
+              "npc_dota_hero_troll_warlord": {
+                "type": "integer"
+              },
+              "npc_dota_creep_badguys_ranged": {
+                "type": "integer"
+              },
+              "npc_dota_badguys_tower2_mid": {
+                "type": "integer"
+              },
+              "npc_dota_creep_badguys_melee": {
+                "type": "integer"
+              },
+              "npc_dota_badguys_range_rax_mid": {
+                "type": "integer"
+              },
+              "npc_dota_hero_magnataur": {
+                "type": "integer"
+              },
+              "npc_dota_hero_death_prophet": {
+                "type": "integer"
+              },
+              "npc_dota_badguys_tower3_mid": {
+                "type": "integer"
+              },
+              "npc_dota_creep_goodguys_melee": {
+                "type": "integer"
+              },
+              "npc_dota_badguys_tower1_mid": {
+                "type": "integer"
+              },
+              "npc_dota_badguys_fort": {
+                "type": "integer"
+              },
+              "illusion_npc_dota_hero_magnataur": {
+                "type": "integer"
+              },
+              "npc_dota_badguys_tower4": {
+                "type": "integer"
+              },
+              "npc_dota_badguys_fillers": {
+                "type": "integer"
+              },
+              "npc_dota_badguys_melee_rax_mid": {
+                "type": "integer"
+              },
+              "npc_dota_hero_wisp": {
+                "type": "integer"
+              },
+              "npc_dota_badguys_siege": {
+                "type": "integer"
+              },
+              "npc_dota_hero_lina": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_ogre_mauler": {
+                "type": "integer"
+              },
+              "npc_dota_badguys_tower2_top": {
+                "type": "integer"
+              },
+              "npc_dota_badguys_tower1_bot": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_ogre_magi": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_kobold": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_enraged_wildkin": {
+                "type": "integer"
+              },
+              "npc_dota_goodguys_tower1_bot": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_wildkin": {
+                "type": "integer"
+              },
+              "npc_dota_creep_goodguys_ranged": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_kobold_taskmaster": {
+                "type": "integer"
+              },
+              "npc_dota_badguys_tower2_bot": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_kobold_tunneler": {
+                "type": "integer"
+              },
+              "illusion_npc_dota_hero_death_prophet": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_gnoll_assassin": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_dark_troll_warlord": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_small_thunder_lizard": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_dark_troll": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_polar_furbolg_ursa_warrior": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_polar_furbolg_champion": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_centaur_khan": {
+                "type": "integer"
+              },
+              "npc_dota_badguys_tower1_top": {
+                "type": "integer"
+              },
+              "npc_dota_goodguys_siege": {
+                "type": "integer"
+              },
+              "npc_dota_dark_troll_warlord_skeleton_warrior": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_big_thunder_lizard": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_centaur_outrunner": {
+                "type": "integer"
+              },
+              "npc_dota_hero_faceless_void": {
+                "type": "integer"
+              },
+              "npc_dota_hero_doom_bringer": {
+                "type": "integer"
+              },
+              "npc_dota_goodguys_tower2_bot": {
+                "type": "integer"
+              },
+              "npc_dota_hero_lion": {
+                "type": "integer"
+              },
+              "npc_dota_goodguys_fillers": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_forest_troll_berserker": {
+                "type": "integer"
+              },
+              "npc_dota_hero_sniper": {
+                "type": "integer"
+              },
+              "npc_dota_goodguys_tower3_mid": {
+                "type": "integer"
+              },
+              "npc_dota_hero_sven": {
+                "type": "integer"
+              },
+              "npc_dota_goodguys_tower2_mid": {
+                "type": "integer"
+              },
+              "npc_dota_goodguys_melee_rax_mid": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_granite_golem": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_rock_golem": {
+                "type": "integer"
+              },
+              "npc_dota_goodguys_range_rax_mid": {
+                "type": "integer"
+              },
+              "npc_dota_goodguys_tower2_top": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_black_dragon": {
+                "type": "integer"
+              },
+              "npc_dota_goodguys_tower1_mid": {
+                "type": "integer"
+              },
+              "npc_dota_roshan": {
+                "type": "integer"
+              },
+              "npc_dota_goodguys_tower1_top": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_black_drake": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_mud_golem": {
+                "type": "integer"
+              },
+              "npc_dota_hero_bloodseeker": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_giant_wolf": {
+                "type": "integer"
+              },
+              "npc_dota_juggernaut_healing_ward": {
+                "type": "integer"
+              },
+              "illusion_npc_dota_hero_spectre": {
+                "type": "integer"
+              },
+              "illusion_npc_dota_hero_wisp": {
+                "type": "integer"
+              },
+              "illusion_npc_dota_hero_juggernaut": {
+                "type": "integer"
+              },
+              "npc_dota_hero_shadow_demon": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_alpha_wolf": {
+                "type": "integer"
+              },
+              "npc_dota_hero_juggernaut": {
+                "type": "integer"
+              },
+              "illusion_npc_dota_hero_storm_spirit": {
+                "type": "integer"
+              },
+              "illusion_npc_dota_hero_earth_spirit": {
+                "type": "integer"
+              },
+              "illusion_npc_dota_hero_disruptor": {
+                "type": "integer"
+              },
+              "npc_dota_hero_pudge": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_satyr_hellcaller": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_satyr_soulstealer": {
+                "type": "integer"
+              },
+              "illusion_npc_dota_hero_pudge": {
+                "type": "integer"
+              },
+              "npc_dota_badguys_melee_rax_top": {
+                "type": "integer"
+              },
+              "npc_dota_badguys_range_rax_top": {
+                "type": "integer"
+              },
+              "npc_dota_hero_earth_spirit": {
+                "type": "integer"
+              },
+              "npc_dota_badguys_tower3_top": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_harpy_scout": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_harpy_storm": {
+                "type": "integer"
+              },
+              "npc_dota_hero_spectre": {
+                "type": "integer"
+              },
+              "npc_dota_hero_storm_spirit": {
+                "type": "integer"
+              },
+              "npc_dota_hero_disruptor": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_satyr_trickster": {
+                "type": "integer"
+              },
+              "illusion_npc_dota_hero_lina": {
+                "type": "integer"
+              },
+              "npc_dota_courier": {
+                "type": "integer"
+              },
+              "npc_dota_creep_goodguys_ranged_upgraded": {
+                "type": "integer"
+              },
+              "npc_dota_creep_goodguys_melee_upgraded": {
+                "type": "integer"
+              },
+              "npc_dota_hero_abaddon": {
+                "type": "integer"
+              },
+              "npc_dota_hero_mirana": {
+                "type": "integer"
+              },
+              "npc_dota_creep_badguys_melee_upgraded": {
+                "type": "integer"
+              },
+              "npc_dota_creep_badguys_ranged_upgraded": {
+                "type": "integer"
+              },
+              "npc_dota_hero_phantom_assassin": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_forest_troll_high_priest": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_fel_beast": {
+                "type": "integer"
+              },
+              "npc_dota_neutral_ghost": {
+                "type": "integer"
+              },
+              "npc_dota_hero_vengefulspirit": {
+                "type": "integer"
+              },
+              "npc_dota_goodguys_fort": {
+                "type": "integer"
+              },
+              "illusion_npc_dota_hero_dark_seer": {
+                "type": "integer"
+              },
+              "npc_dota_goodguys_tower4": {
+                "type": "integer"
+              },
+              "npc_dota_hero_earthshaker": {
+                "type": "integer"
+              },
+              "npc_dota_hero_silencer": {
+                "type": "integer"
+              },
+              "illusion_npc_dota_hero_phantom_assassin": {
+                "type": "integer"
+              },
+              "npc_dota_hero_dark_seer": {
+                "type": "integer"
+              },
+              "illusion_npc_dota_hero_sven": {
+                "type": "integer"
+              },
+              "illusion_npc_dota_hero_abaddon": {
+                "type": "integer"
+              },
+              "npc_dota_goodguys_tower3_top": {
+                "type": "integer"
+              },
+              "npc_dota_observer_wards": {
+                "type": "integer"
+              },
+              "npc_dota_hero_nyx_assassin": {
+                "type": "integer"
+              },
+              "npc_dota_hero_crystal_maiden": {
+                "type": "integer"
+              },
+              "npc_dota_badguys_siege_upgraded": {
+                "type": "integer"
+              },
+              "npc_dota_sentry_wards": {
+                "type": "integer"
+              },
+              "illusion_npc_dota_hero_silencer": {
+                "type": "integer"
+              },
+              "npc_dota_brewmaster_fire_1": {
+                "type": "integer"
+              },
+              "npc_dota_brewmaster_fire_2": {
+                "type": "integer"
+              },
+              "npc_dota_brewmaster_earth_1": {
+                "type": "integer"
+              },
+              "npc_dota_goodguys_melee_rax_bot": {
+                "type": "integer"
+              },
+              "npc_dota_hero_zuus": {
+                "type": "integer"
+              },
+              "npc_dota_hero_leshrac": {
+                "type": "integer"
+              },
+              "npc_dota_brewmaster_storm_1": {
+                "type": "integer"
+              },
+              "npc_dota_brewmaster_storm_2": {
+                "type": "integer"
+              },
+              "npc_dota_hero_drow_ranger": {
+                "type": "integer"
+              },
+              "npc_dota_hero_brewmaster": {
+                "type": "integer"
+              },
+              "npc_dota_brewmaster_earth_2": {
+                "type": "integer"
+              },
+              "npc_dota_goodguys_tower3_bot": {
+                "type": "integer"
+              },
+              "illusion_npc_dota_hero_earthshaker": {
+                "type": "integer"
+              },
+              "npc_dota_goodguys_range_rax_bot": {
+                "type": "integer"
+              },
+              "illusion_npc_dota_hero_zuus": {
+                "type": "integer"
+              },
+              "npc_dota_hero_spirit_breaker": {
+                "type": "integer"
+              },
+              "npc_dota_badguys_melee_rax_bot": {
+                "type": "integer"
+              },
+              "npc_dota_badguys_tower3_bot": {
+                "type": "integer"
+              },
+              "npc_dota_hero_oracle": {
+                "type": "integer"
+              },
+              "npc_dota_hero_rubick": {
+                "type": "integer"
+              },
+              "npc_dota_badguys_range_rax_bot": {
+                "type": "integer"
+              },
+              "npc_dota_hero_techies": {
+                "type": "integer"
+              },
+              "npc_dota_hero_queenofpain": {
+                "type": "integer"
+              },
+              "npc_dota_hero_axe": {
+                "type": "integer"
+              },
+              "npc_dota_techies_land_mine": {
+                "type": "integer"
+              },
+              "npc_dota_techies_remote_mine": {
+                "type": "integer"
+              },
+              "illusion_npc_dota_hero_queenofpain": {
+                "type": "integer"
+              },
+              "npc_dota_hero_riki": {
+                "type": "integer"
+              },
+              "npc_dota_hero_elder_titan": {
+                "type": "integer"
+              },
+              "npc_dota_hero_dragon_knight": {
+                "type": "integer"
+              },
+              "npc_dota_hero_omniknight": {
+                "type": "integer"
+              },
+              "npc_dota_hero_slardar": {
+                "type": "integer"
+              },
+              "illusion_npc_dota_hero_slardar": {
+                "type": "integer"
+              },
+              "npc_dota_hero_skywrath_mage": {
+                "type": "integer"
+              },
+              "npc_dota_hero_windrunner": {
+                "type": "integer"
+              },
+              "npc_dota_hero_slark": {
+                "type": "integer"
+              },
+              "npc_dota_hero_dazzle": {
+                "type": "integer"
+              },
+              "npc_dota_goodguys_siege_upgraded": {
+                "type": "integer"
+              },
+              "npc_dota_hero_weaver": {
+                "type": "integer"
+              },
+              "npc_dota_weaver_swarm": {
+                "type": "integer"
+              },
+              "npc_dota_hero_sand_king": {
+                "type": "integer"
+              },
+              "npc_dota_goodguys_melee_rax_top": {
+                "type": "integer"
+              },
+              "npc_dota_goodguys_range_rax_top": {
+                "type": "integer"
+              },
+              "illusion_npc_dota_hero_sand_king": {
+                "type": "integer"
+              }
+            }
+          },
+          "damage_taken": {
+            "type": "mixed",
+            "properties": {}
+          },
+          "damage_inflictor": {
+            "type": "mixed",
+            "properties": {}
+          },
+          "runes": {
+            "type": "mixed",
+            "properties": {}
+          },
+          "killed_by": {
+            "type": "mixed",
+            "properties": {}
+          },
+          "modifier_applied": {
+            "type": "mixed",
+            "properties": {}
+          },
+          "kill_streaks": {
+            "type": "mixed",
+            "properties": {}
+          },
+          "multi_kills": {
+            "type": "mixed",
+            "properties": {}
+          },
+          "healing": {
+            "type": "mixed",
+            "properties": {}
+          }
+        }
+      }
+    }
+  }
+}
